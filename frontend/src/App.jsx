@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
+import Signup from './pages/Signup';
 import AdminDashboard from './pages/AdminDashboard'; 
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import CustomerDashboard from './pages/CustomerDashboard';
@@ -29,6 +30,9 @@ function App() {
 
         {/* Public Login Route */}
         <Route path="/login" element={<Login />} />
+        
+        {/* Public Signup Route */}
+        <Route path="/signup" element={<Signup />} />
         
         {/* Admin Dashboard - PROTECTED */}
         <Route 
